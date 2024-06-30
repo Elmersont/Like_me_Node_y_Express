@@ -1,0 +1,13 @@
+--psql
+CREATE DATABASE "likeme";
+-- \l
+-- \c likeme
+CREATE TABLE posts (
+    id SERIAL,
+    titulo VARCHAR(25),
+    img VARCHAR(1000),
+    descripcion VARCHAR(255) NOT NULL,
+    likes INT
+);
+-- \dt 
+-- \q
